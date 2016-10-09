@@ -15,7 +15,7 @@ func Test_Com(t *testing.T) {
 		event := "测试短信"
 		text := fmt.Sprintf("【elapen】事件提醒：您将于%s进行%s", timeStr, event)
 		log.Greenln(text)
-		info, err := sms.Send("15989553147", text)
+		info, err := sms.Send("159********", text)
 		if err != nil {
 			log.Println(err)
 		} else {
